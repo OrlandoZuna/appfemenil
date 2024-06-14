@@ -1,0 +1,120 @@
+ %% PLEASE DO NOT MODIFY OR DELETE THIS FILE! %% 
+ %% This file contains information about the installation of an application. %% 
+ %% It will be used to automatically remove all application components from your computer if you choose to do so. %% 
+
+
+NOTE: Beginning of the bootstrapper section
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+CONFIG: Title: "TORA"
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+*** ERROR: Unable to create a directory named 'C:'
+*** DURING THIS ACTION: CreateDir: "C:"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "SharedDLLs"
+
+ACTION: SystemFile: "C:\Windows\System32\VB6STKIT.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\COMCAT.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\MSVCRT40.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\STDOLE2.TLB"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\ASYCFILT.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\OLEPRO32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\OLEAUT32.DLL"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\WINDOWS\SYSTEM32\msvbvm60.dll"
+(File currently on disk was already up to date)
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\COMCAT.DLL"
+
+ACTION: TLBRegister: "C:\WINDOWS\SYSTEM32\STDOLE2.TLB"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\OLEPRO32.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\OLEAUT32.DLL"
+
+ACTION: DllSelfRegister: "C:\WINDOWS\SYSTEM32\msvbvm60.dll"
+
+NOTE: End of the bootstrapper section
+
+NOTE: Now spawning the main Setup program 'Setup1.exe'....
+
+ACTION: SharedFile: "C:\Windows\System32\COMDLG32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Windows\System32\EXCEL9.OLB"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Windows\System32\VB5DB.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\Windows\System32\MSREPL35.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\Windows\System32\MSRD2X35.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\Windows\System32\expsrv.dll"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\Windows\System32\vbajet32.dll"
+(File currently on disk was already up to date)
+
+ACTION: SystemFile: "C:\Windows\System32\MSJINT35.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\Windows\System32\MSJTER35.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SystemFile: "C:\Windows\System32\MSJET35.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Windows\System32\DBGRID32.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: SharedFile: "C:\Windows\System32\MSFLXGRD.OCX"
+(File was not found or was an older version -- new file copied)
+
+ACTION: PrivateFile: "D:\AjaxLaravel\tora.exe"
+(File was not found or was an older version -- new file copied)
+
+ACTION: DllSelfRegister: "C:\Windows\System32\COMDLG32.OCX"
+
+ACTION: DllSelfRegister: "C:\Windows\System32\MSRD2X35.DLL"
+
+ACTION: DllSelfRegister: "C:\Windows\System32\MSJET35.DLL"
+
+ACTION: DllSelfRegister: "C:\Program Files (x86)\Common Files\Microsoft Shared\DAO\DAO350.DLL"
+
+ACTION: DllSelfRegister: "C:\Windows\System32\DBGRID32.OCX"
+
+ACTION: DllSelfRegister: "C:\Windows\System32\MSFLXGRD.OCX"
+
+ACTION: ShellLink: "TORA", "TORA"
+
+ACTION: ShellLink: "$(Start Menu)", "Tora"
+
+ACTION: RegKey: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion", "App Paths\tora.exe"
+
+ACTION: RegValue: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\tora.exe", ""
+
