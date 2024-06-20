@@ -1,6 +1,6 @@
 # CARGAMOS IMAGEN DE PHP MODO ALPINE SUPER REDUCIDA
-FROM elrincondeisma/octane:latest
-
+#FROM elrincondeisma/octane:latest
+FROM php:7
 RUN curl -sS https://getcomposer.org/installer​ | php -- \
      --install-dir=/usr/local/bin --filename=composer
 
@@ -11,7 +11,7 @@ WORKDIR /app
 COPY . .
 RUN rm -rf /app/vendor
 RUN rm -rf /app/composer.lock
-RUN composer install --no-plugins --no-scripts ...
+RUN composer install
 RUN composer require laravel/octane spiral/roadrunner
 COPY .env.example .env
 RUN mkdir -p /app/storage/logs
