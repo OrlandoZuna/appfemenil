@@ -11,10 +11,10 @@ WORKDIR /app
 COPY . .
 RUN rm -rf /app/vendor
 RUN rm -rf /app/composer.lock
-RUN composer install
+RUN composer update
 RUN composer require laravel/octane spiral/roadrunner
 COPY .env.example .env
-#RUN mkdir -p /app/storage/logs
+RUN mkdir -p /app/storage/logs
 RUN php artisan cache:clear
 RUN php artisan view:clear
 RUN php artisan config:clear
