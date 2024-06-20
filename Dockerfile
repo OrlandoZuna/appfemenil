@@ -5,6 +5,7 @@ FROM php:7
 RUN apt-get update -y && apt-get install -y openssl zip unzip git
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+RUN docker-php-ext-install pdo pdo_mysql
 #RUN curl -sS https://getcomposer.org/installer​ | php -- \
     # --install-dir=/usr/local/bin --filename=composer
 
@@ -22,7 +23,9 @@ RUN mkdir -p /app/storage/logs
 RUN php artisan cache:clear
 RUN php artisan view:clear
 RUN php artisan config:clear
-RUN php artisan octane:install --server="swoole"
-CMD php artisan octane:start --server="swoole" --host="0.0.0.0"
+
+CMD php artisan serve --host=0.0.0.0 --port=8000
+#RUN php artisan octane:install --server="swoole"
+#CMD php artisan octane:start --server="swoole" --host="0.0.0.0"
 
 EXPOSE 8000
