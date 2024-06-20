@@ -12,7 +12,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 #COPY --from=spiralscout/roadrunner:2.4.2 /usr/bin/rr /usr/bin/rr
 
 WORKDIR /app
-COPY /app
+COPY . /app
 RUN rm -rf /app/vendor
 RUN rm -rf /app/composer.lock
 RUN composer install
